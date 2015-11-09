@@ -27,7 +27,13 @@ There are fifteen values on each line, though some are not as useful as others I
 
 These are just a few examples of users of the dataset.Parents and baby sitters to find their local playground, schools to take kids to after a trip and the county council to see where the current playgrounds are and where they should place the next one if needed. As the API is intended to be used by the general public I feel as though it would be easier for them if the code and the understanding of the API was quite simple.
 
-##  Location of the Playground
+## Commands for the Dataset
+
+1. **GET**: Used to query the dataset for a specific an item or ID.
+2. **ADD**: Used to add a new row with the appropiate attributes.
+3. **POST**: Used
+
+##  Using the Dataset
 
 The following is an example of how to use the URLs in the API to query a specific item or ID in the dataset for this example I will show the getting the location
 
