@@ -2,10 +2,10 @@
 Student Name: Shane Carville
 
 ## Introduction
-This project provides the design and documentation for the dataset "Galway City PLaygrounds" which is available at [data.gov.ie](https://data.gov.ie/dataset/galway-city-playground-locations). The purpose of this project is to create an API that can be useful to the intended audience and is also easy to use.
+This project provides the design and documentation for the dataset "Galway City Playgrounds" which is available at [data.gov.ie](https://data.gov.ie/dataset/galway-city-playground-locations). The purpose of this project is to create an API that can be useful to the intended audience and is also easy to use.
 
 ##About the Data
-This dataset was found at the previously mentioned URL, in Comma Separated Values (CSV) format, and was downloaded from [*data.gov.ie*](https://data.gov.ie/dataset/galway-city-playground-locations/resource/b81820b4-dd2e-4181-b93b-d2033a9f9a85).
+This dataset is about the Galway City playgrounds. This dataset was found at the previously mentioned URL, in Comma Separated Values (CSV) format, and was downloaded from [*data.gov.ie*](https://data.gov.ie/dataset/galway-city-playground-locations/resource/b81820b4-dd2e-4181-b93b-d2033a9f9a85).
 The CSV file has 31 rows, with the first being the header or id of the column
 There are fifteen values on each line, though some are not as useful as others I have selected the most useful for the user.
 
@@ -17,7 +17,7 @@ There are fifteen values on each line, though some are not as useful as others I
     - [toiletFacilities]: if the playground has toilets or not.
     - [equipment]: if the playground has any specialised equipment e.g basketball courts
     - [latitude]: the latitue position of the playground.
-    - [longitude]: the longitude position of the playdround.
+    - [longitude]: the longitude position of the playground.
 
 ## Users of the Dataset
 > - *Parents*
@@ -25,5 +25,24 @@ There are fifteen values on each line, though some are not as useful as others I
 > - *Schools on a trip*
 > - *County Council*
 
-These are just a few examples of users of the dataset.Parents and baby sitters to find their local playground, schools to take kids to after a trip and the county council to see where the current playgrounds are and where they should place the next one if needed.
+These are just a few examples of users of the dataset.Parents and baby sitters to find their local playground, schools to take kids to after a trip and the county council to see where the current playgrounds are and where they should place the next one if needed. As the API is intended to be used by the general public I feel as though it would be easier for them if the code and the understanding of the API was quite simple.
 
+##  Location of the Playground
+
+The following is an example of how to use the URLs in the API to query a specific item or ID in the dataset for this example I will show the getting the location
+
+```
+You can *get* the location of the playground using the **GET** method at the following URL:
+*http://GCityPlaygrounds.com/location/[location]*
+where you swap [location] with a town e.g Claddagh.
+For example, the URL:
+*http://GCityPlaygrounds.com/location/Claddagh*
+this will return the list of playgrounds in the Claddagh area.
+The data will be returned in JSON format, with the following properties for each car:
+    - *location*: the location of the playground.
+    - *parking*: the parking facilities at the playground.
+    ...
+An example of a response would be:
+    ```json
+    [ {"location": "Claddagh, Galway", "parking": "Adjacent public car", ...}, {...}, ...]
+    ```
