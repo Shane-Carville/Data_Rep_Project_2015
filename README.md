@@ -112,4 +112,4 @@ code
 
 A link to an API for playground in galway county is available from [Galway County Playground](https://data.gov.ie/dataset/playgrounds-county-galway)
 
-A link to understandind HTTP methods is availavle at the following [Understanding HTTP Methodshttp://www.tutorialspoint.com/http/http_methods.htm](http://www.tutorialspoint.com/http/http_methods.htm)
+A link to understandind HTTP methods is availavle at the following [Understanding HTTP Methods](http://www.tutorialspoint.com/http/http_methods.htm)
