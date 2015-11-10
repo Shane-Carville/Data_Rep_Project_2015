@@ -17,6 +17,7 @@ There are fifteen values on each line, though some are not as useful as others I
     - [toiletFacilities]: if the playground has toilets or not.
     - [equipment]: if the playground has any specialised equipment e.g basketball courts
     - [latitude]: the latitue position of the playground.
+    - [specialNeeds]: if the playground has access and is suitable for childern with special needs.
     - [longitude]: the longitude position of the playground.
     
 The longitude and latitude of the playgrounds could be used in conjuncture with a maps API to give a presise location or just give the co-ordinates and allow the user to enter them into an app.
