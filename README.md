@@ -51,8 +51,9 @@ The data will be returned in JSON format, with the following properties for the 
 An example of a response would be:
     ```json
     [ {"location": "Claddagh, Galway", "parking": "Adjacent public car", ...}, {...}, ...]
-    ````
-````
+    ```
+```
+
 
 To get the precise location of the playground using longitude and latitude the URL example is as follows
 ```
@@ -68,5 +69,21 @@ the data will again be returned in JSON format:
     ```
 ```
 
-The last example is for querying the surface of the playground, the toilet facilities, the equipment there and the playground opening hours.
+
+The last example is for querying the surface of the playground, the toilet facilities, the equipment there and the playground opening hours and if it caters to childern with special needs.
 ```
+Again using the **GET** method at the following URL
+**http://GCityPlaygrounds.com/[location]/facilitles*
+where location is swapped with the location e.g Claddagh.
+Example URL
+**http://GCityPlaygrounds.com/Claddagh/facilitles*
+this will then return the percise location of the playgrounds in the Claddagh area.
+the data will again be returned in JSON format:
+    ``` json
+    [ {Claddagh, Galway:, "Toilets:", "No", "Equipment:", "No Special Equipment", "Surface:", "Rubber Wet-pour surface", "Special Needs:", "Yes" }, {...}, ...]
+    ```
+```
+
+##Maintaining the Dataset
+
+The maintanence of the dataset will be handled by the **ADD** and **REMOVE** methods of jquery they will allow future users to *remove* attributes of a playground or a playground enterily if that occurs and *add* new facilities and entire playgrounds if they are built.
