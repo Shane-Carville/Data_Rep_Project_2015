@@ -108,6 +108,16 @@ As follows:
 code
 ```
 
+##Format of the Page
+
+Location | Surface | Parking | Opening Hours
+---------|--:|------------|----------
+**Ballybane, Galway** | Rubber Wet-pour surface | Within estate | No restricted opening hours
+**Mervue, Galway** | Rubber Wet-pour surface | Within estate | No restricted opening hours
+**Renmore, Galway** | Rubber Wet-pour surface | Within estate | No restricted opening hours
+**Lough Atalia Road, Galway** | Rubber Wet-pour surface | Public car park on Cerb | No restricted opening hours
+**Merlin Woods, Galway** | Rubber Wet-pour surface | Within estate | No restricted opening hours
+
 ##Further Links
 
 A link to an API for playground in galway county is available from [Galway County Playground](https://data.gov.ie/dataset/playgrounds-county-galway)
