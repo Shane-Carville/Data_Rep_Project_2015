@@ -38,6 +38,10 @@ These are just a few examples of users of the dataset.Parents and baby sitters t
 3. **POST**: Used to send data to the dataset.
 4. **DELETE**: Used to remove a row or attribute in the dataset.
 
+##URLs the Dataset Uses
+
+These are a few of the URls that the dataset will use and what they return.
+
 ##  Querying the Dataset
 
 The following is an example of how to use the URLs in the API to query a specific item or ID in the dataset for this example I will show the getting the location
