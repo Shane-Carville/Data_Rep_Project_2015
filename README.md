@@ -33,8 +33,9 @@ These are just a few examples of users of the dataset.Parents and baby sitters t
 ## Commands for the Dataset
 
 1. **GET**: Used to query the dataset for a specific an item or ID.
-2. **ADD**: Used to add a new row with the appropiate attributes.
-3. **POST**: Used
+2. **PUT**: Used to add a new row with the appropiate attributes.
+3. **POST**: Used to send data to the dataset.
+4. **DELETE**: Used to remove a row or attribute in the dataset.
 
 ##  Querying the Dataset
 
@@ -89,7 +90,22 @@ the data will again be returned in JSON format:
 
 ##Maintaining the Dataset
 
-The maintanence of the dataset will be handled by the **ADD** and **REMOVE** methods of jquery they will allow future users to *remove* attributes of a playground or a playground enterily if that occurs and *add* new facilities and entire playgrounds if they are built. If a user of they dataset feels inclined to do so.
+If a user would like to send an image of the playground to the API that could be done using the **POST** request.
+As follows:
+```
+code
+```
 
+If the user would like to *ADD* any extra playgrounds or another attriubte to a playground this could be done using the **PUT** request.
+As follows:
+```
+code
+```
+
+If the user would like to *remove* any playground or a current atturibute of a playground that could be done using the **DELETE** request.
+As follows:
+```
+code
+```
 
 A link to an API for playground in galway county is available from [Galway County Playground](https://data.gov.ie/dataset/playgrounds-county-galway)
