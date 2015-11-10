@@ -33,7 +33,7 @@ These are just a few examples of users of the dataset.Parents and baby sitters t
 2. **ADD**: Used to add a new row with the appropiate attributes.
 3. **POST**: Used
 
-##  Using the Dataset
+##  Querying the Dataset
 
 The following is an example of how to use the URLs in the API to query a specific item or ID in the dataset for this example I will show the getting the location
 
@@ -44,11 +44,29 @@ where you swap [location] with a town e.g Claddagh.
 For example, the URL:
 *http://GCityPlaygrounds.com/location/Claddagh*
 this will return the list of playgrounds in the Claddagh area.
-The data will be returned in JSON format, with the following properties for each car:
+The data will be returned in JSON format, with the following properties for the playground:
     - *location*: the location of the playground.
     - *parking*: the parking facilities at the playground.
     ...
 An example of a response would be:
     ```json
     [ {"location": "Claddagh, Galway", "parking": "Adjacent public car", ...}, {...}, ...]
+    ````
+````
+
+To get the precise location of the playground using longitude and latitude the URL example is as follows
+```
+Again using the **GET** method at the following URL
+**http://GCityPlaygrounds.com/preciseLoc/[location]*
+where [location] is swapped with the location e.g Claddagh.
+Example URL
+**http://GCityPlaygrounds.com/preciseLoc/Claddagh*
+this will then return the percise location of the playgrounds in the Claddagh area.
+the data will again be returned in JSON format:
+    ``` json
+    [ {"longituide": "-9.053", "latitude": "53.267" "location": "Claddagh, Galway",...}, {...}, ...]
     ```
+```
+
+The last example is for querying the surface of the playground, the toilet facilities, the equipment there and the playground opening hours.
+```
