@@ -110,6 +110,8 @@ code
 
 ##Format of the Page
 
+This is the format of the page that would be displayed when a user searches the URL and the attributes would change when a user queries data from the dataset.
+
 Location | Surface | Parking | Opening Hours
 ---------|--:|------------|----------
 **Ballybane, Galway** | Rubber Wet-pour surface | Within estate | No restricted opening hours
