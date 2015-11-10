@@ -18,6 +18,9 @@ There are fifteen values on each line, though some are not as useful as others I
     - [equipment]: if the playground has any specialised equipment e.g basketball courts
     - [latitude]: the latitue position of the playground.
     - [longitude]: the longitude position of the playground.
+    
+The longitude and latitude of the playgrounds could be used in conjuncture with a maps API to give a presise location or just give the co-ordinates and allow the user to enter them into an app.
+The opening hours attribute could also be used in conjuncture with another API to check if they park is still open at the time the user queries the dataset.
 
 ## Users of the Dataset
 > - *Parents*
@@ -86,4 +89,7 @@ the data will again be returned in JSON format:
 
 ##Maintaining the Dataset
 
-The maintanence of the dataset will be handled by the **ADD** and **REMOVE** methods of jquery they will allow future users to *remove* attributes of a playground or a playground enterily if that occurs and *add* new facilities and entire playgrounds if they are built.
+The maintanence of the dataset will be handled by the **ADD** and **REMOVE** methods of jquery they will allow future users to *remove* attributes of a playground or a playground enterily if that occurs and *add* new facilities and entire playgrounds if they are built. If a user of they dataset feels inclined to do so.
+
+
+A link to an API for playground in galway county is available from [Galway County Playground](https://data.gov.ie/dataset/playgrounds-county-galway)
