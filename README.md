@@ -9,17 +9,19 @@ This dataset is about the Galway City playgrounds. This dataset was found at the
 The CSV file has 31 rows, with the first being the header or id of the column
 There are fifteen values on each line, though some are not as useful as others I have selected the most useful for the user.
 
-    - [name]: the name of the playground.
-    - [location]: the location of the playground.
-    - [surface]: the type of surface at the playground.
-    - [parking]: if the playground has parking or not.
-    - [openingHours]: the opening hours of the playground.
-    - [toiletFacilities]: if the playground has toilets or not.
-    - [equipment]: if the playground has any specialised equipment e.g basketball courts
-    - [latitude]: the latitue position of the playground.
-    - [specialNeeds]: if the playground has access and is suitable for childern with special needs.
-    - [longitude]: the longitude position of the playground.
-    
+Attribute | Description |
+---------|--:|------------|----------
+**Name** | The name of the playground |
+**Location** | the location of the playground |
+**Surface** | The type of surface at the playground |
+**Parking** | if the playground has parking or not |
+**Opening Hours** | The opening hours of the playground |
+**Toitlet Facilities** | if the playground has toilets or not |
+**Equipment** | if the playgroud has any specilised equipment e.g basketball courts |
+**Latitude** | the latitude postion of the playground |
+**Longitude** | the longitude postion of the playground |
+**Special Needs** | if the playground has access and is suitable for childern with special needs |
+
 The longitude and latitude of the playgrounds could be used in conjuncture with a maps API to give a presise location or just give the co-ordinates and allow the user to enter them into an app.
 The opening hours attribute could also be used in conjuncture with another API to check if they park is still open at the time the user queries the dataset.
 
@@ -33,6 +35,8 @@ These are just a few examples of users of the dataset.Parents and baby sitters t
 
 ## Commands for the Dataset
 
+These are the commands that the dataset will respond to.
+
 1. **GET**: Used to query the dataset for a specific an item or ID.
 2. **PUT**: Used to add a new row with the appropiate attributes.
 3. **POST**: Used to send data to the dataset.
@@ -41,6 +45,17 @@ These are just a few examples of users of the dataset.Parents and baby sitters t
 ##URLs the Dataset Uses
 
 These are a few of the URls that the dataset will use and what they return.
+
+1. *http://GCityPlaygrounds.com/Mervue*
+This will return all playgrounds in the Mervue area.
+2. *http://GCityPlaygrounds.com/Mervue/Parking*
+This will return what kind of parking the Mervue playground has.
+3. *http://GCityPlaygrounds.com/facilities/Mervue*
+This will return the facilities available at the Mervue e.g: the toilets and the extra equipment available there.
+4. *http://GCityPlaygrounds.com/Preciseloc/Mervue*
+This will return the presise location of the playground using the longitude and latitude.
+5. *http://GCityPlaygrounds.com/Mervue/extras*
+This will return the the extra information on the playground like the type of surface and if the playground caters to childern with special needs.
 
 ##  Querying the Dataset
 
@@ -98,32 +113,23 @@ the data will again be returned in JSON format:
 If a user would like to send an image of the playground to the API that could be done using the **POST** request.
 As follows:
 ```
-code
+jQuery.post( *http://GCityPlaygrounds.com/Mervue*, [data], success, json );
+Replaceing [data] with the data or image that you would like to send to the dataset if successful the success function will return from the code.
 ```
 
 If the user would like to *ADD* any extra playgrounds or another attriubte to a playground this could be done using the **PUT** request.
 As follows:
 ```
-code
+Mervue.dataset('Surface', "Concrete");
+This will replace the surface type that is already there with the new type concrete.
 ```
 
 If the user would like to *remove* any playground or a current atturibute of a playground that could be done using the **DELETE** request.
 As follows:
 ```
-code
+( "Mervue" ).removeData( "Equipment", "Basketball courts" );
+This will remove the basketball courts attribute in the Equipment column.
 ```
-
-##Format of the Page
-
-This is the format of the page that would be displayed when a user searches the URL and the attributes would change when a user queries data from the dataset.
-
-Location | Surface | Parking | Opening Hours
----------|--:|------------|----------
-**Ballybane, Galway** | Rubber Wet-pour surface | Within estate | No restricted opening hours
-**Mervue, Galway** | Rubber Wet-pour surface | Within estate | No restricted opening hours
-**Renmore, Galway** | Rubber Wet-pour surface | Within estate | No restricted opening hours
-**Lough Atalia Road, Galway** | Rubber Wet-pour surface | Public car park on Cerb | No restricted opening hours
-**Merlin Woods, Galway** | Rubber Wet-pour surface | Within estate | No restricted opening hours
 
 ##Further Links
 
