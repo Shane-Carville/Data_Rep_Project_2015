@@ -12,15 +12,15 @@ There are fifteen values on each line, though some are not as useful as others I
 Attribute | Description |
 ---------|--:|------------|----------
 **Name** | The name of the playground |
-**Location** | the location of the playground |
+**Location** | The location of the playground |
 **Surface** | The type of surface at the playground |
-**Parking** | if the playground has parking or not |
+**Parking** | If the playground has parking or not |
 **Opening Hours** | The opening hours of the playground |
-**Toitlet Facilities** | if the playground has toilets or not |
-**Equipment** | if the playgroud has any specilised equipment e.g basketball courts |
-**Latitude** | the latitude postion of the playground |
-**Longitude** | the longitude postion of the playground |
-**Special Needs** | if the playground has access and is suitable for childern with special needs |
+**Toitlet Facilities** | If the playground has toilets or not |
+**Equipment** | If the playgroud has any specilised equipment e.g basketball courts |
+**Latitude** | The latitude postion of the playground |
+**Longitude** | The longitude postion of the playground |
+**Special Needs** | If the playground has access and is suitable for childern with special needs |
 
 The longitude and latitude of the playgrounds could be used in conjuncture with a maps API to give a presise location or just give the co-ordinates and allow the user to enter them into an app.
 The opening hours attribute could also be used in conjuncture with another API to check if they park is still open at the time the user queries the dataset.
